@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Delicia — Cocina Peruana de Autor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-logo">La Delicia</div>
+    <div class="loader-sub">Cocina Peruana de Autor</div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">La Delicia</a>
+    <ul class="nav-links">
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#reservas" class="nav-cta">Reservar Mesa</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <!-- PON TU IMAGEN EN: img/hero.jpg -->
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Lima, Perú — Desde 2018</div>
+      <h1 class="hero-title">
+        La Delicia
+        <span>Cocina Peruana de Autor</span>
+      </h1>
+      <p class="hero-sub">Donde los sabores ancestrales del Perú se elevan a arte.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn-primary">Explorar Menú</a>
+        <a href="#reservas" class="btn-outline">Hacer Reserva</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Descubrir</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PILARES -->
+  <section id="pilares">
+    <div class="section-eyebrow">Nuestra Filosofía</div>
+    <h2 class="section-title reveal">Tradición que <em>inspira</em></h2>
+    <div class="pilares-grid">
+      <div class="pilar reveal reveal-delay-1">
+        <div class="pilar-num">01</div>
+        <img src="img/pilar1.png" alt="Ingredientes" class="pilar-img">
+        <h3>Ingredientes del Perú</h3>
+        <p>Seleccionamos los mejores productos de cada región: ajíes del norte, papas nativas de los Andes, mariscos frescos del Pacífico.</p>
+      </div>
+      <div class="pilar reveal reveal-delay-2">
+        <div class="pilar-num">02</div>
+        <img src="img/pilar2.png" alt="Chef" class="pilar-img">
+        <h3>Técnica de Autor</h3>
+        <p>Fusionamos técnicas culinarias contemporáneas con recetas ancestrales en una propuesta única e inigualable.</p>
+      </div>
+      <div class="pilar reveal reveal-delay-3">
+        <div class="pilar-num">03</div>
+        <img src="img/pilar3.png" alt="Ambiente" class="pilar-img">
+        <h3>Experiencia Total</h3>
+        <p>Más que una comida: ambiente íntimo, maridajes únicos y un servicio personalizado que te hace sentir en casa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section id="menu">
+    <div class="menu-header">
+      <div>
+        <div class="section-eyebrow reveal">Nuestra Carta</div>
+        <h2 class="section-title reveal">Sabores que <em>enamoran</em></h2>
+      </div>
+    </div>
+    <div class="menu-cats reveal">
+      <button class="menu-cat-btn active" data-cat="todos">Todos</button>
+      <button class="menu-cat-btn" data-cat="entradas">Entradas</button>
+      <button class="menu-cat-btn" data-cat="fondos">Fondos</button>
+      <button class="menu-cat-btn" data-cat="postres">Postres</button>
+      <button class="menu-cat-btn" data-cat="bebidas">Bebidas</button>
+    </div>
+    <div class="menu-grid reveal" id="menu-grid">
+
+      <div class="menu-item" data-cat="entradas">
+        <img src="img/ceviche.png" alt="Ceviche" class="menu-item-img">
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Ceviche Clásico</div>
+            <div class="menu-item-price">S/ 38</div>
+          </div>
+          <div class="menu-item-desc">Pescado fresco marinado en limón, ají limo, cebolla roja, culantro y leche de tigre. Con choclo, camote y cancha.</div>
+          <span class="menu-item-badge">Signature</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="entradas">
+        <img src="img/leche-tigre.png" alt="Leche de Tigre" class="menu-item-img">
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Leche de Tigre con Conchas</div>
+            <div class="menu-item-price">S/ 44</div>
+          </div>
+          <div class="menu-item-desc">Cóctel de mariscos en leche de tigre intensa, conchas negras, ají amarillo y trozos de pulpo.</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="entradas">
+        <img src="img/causa.png" alt="Causa" class="menu-item-img">
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Causa Limeña de Cangrejo</div>
+            <div class="menu-item-price">S/ 36</div>
+          </div>
+          <div class="menu-item-desc">Papa amarilla nativa con ají amarillo, cangrejo real, mayonesa de huacatay y láminas de palta.</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="fondos">
+        <img src="img/lomo.png" alt="Lomo Saltado" class="menu-item-img">
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Lomo Saltado de Autor</div>
+            <div class="menu-item-price">S/ 68</div>
+          </div>
+          <div class="menu-item-desc">Lomo fino de res con tomates deshidratados, cebolla morada caramelizada y papas soufflé.</div>
+          <span class="menu-item-badge">Chef's Choice</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="fondos">
+        <img src="img/aji-gallina.png" alt="Ají de Gallina" class="menu-item-img">
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Ají de Gallina Premium</div>
+            <div class="menu-item-price">S/ 52</div>
+          </div>
+          <div class="menu-item-desc">Pollo de corral deshebrado en salsa de ají amarillo, nueces, pan brioche y queso parmesano.</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="fondos">
+        <img src="img/sudado.png" alt="Sudado" class="menu-item-img">
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Sudado de Mariscos</div>
+            <div class="menu-item-price">S/ 72</div>
+          </div>
+          <div class="menu-item-desc">Langostinos, pulpo, conchas y pescado en caldo de rocoto y ají panca ahumado. Con yuca tostada.</div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="postres">
+        <img src="img/suspiro.png" alt="Suspiro" class="menu-item-img">
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Suspiro a la Limeña</div>
+            <div class="menu-item-price">S/ 24</div>
+          </div>
+          <div class="menu-item-desc">Manjar blanco de lúcuma sobre merengue italiano al oporto. Decorado con hoja de oro.</div>
+          <span class="menu-item-badge">Postre estrella</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="bebidas">
+        <img src="img/pisco.png" alt="Pisco Sour" class="menu-item-img">
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Pisco Sour Clásico</div>
+            <div class="menu-item-price">S/ 28</div>
+          </div>
+          <div class="menu-item-desc">Pisco quebranta, limón de chulucanas, jarabe artesanal, clara de huevo y amargo de angostura.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros">
+    <div class="nosotros-visual">
+      <!-- PON TU IMAGEN EN: img/nosotros.png -->
+      <div class="nosotros-overlay"></div>
+    </div>
+    <div class="nosotros-content">
+      <div class="section-eyebrow reveal">Nuestra Historia</div>
+      <h2 class="section-title reveal">Pasión por la <em>gastronomía</em> peruana</h2>
+      <div class="gold-rule reveal"></div>
+      <p class="section-body reveal">Nacimos en 2018 con un sueño: honrar la rica tradición culinaria del Perú elevándola a su máxima expresión. Cada receta nació de viajes por los 25 departamentos del país.</p>
+      <p class="section-body reveal reveal-delay-1" style="margin-top:16px;">Hoy somos reconocidos como uno de los destinos gastronómicos más destacados de Lima.</p>
+      <div class="nosotros-stats reveal reveal-delay-2">
+        <div><div class="stat-num">6+</div><div class="stat-label">Años de historia</div></div>
+        <div><div class="stat-num">25</div><div class="stat-label">Regiones del Perú</div></div>
+        <div><div class="stat-num">4.9</div><div class="stat-label">Calificación</div></div>
+        <div><div class="stat-num">12k+</div><div class="stat-label">Comensales</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHEF -->
+  <section id="chef">
+    <div style="text-align:center;">
+      <div class="section-eyebrow reveal" style="justify-content:center;">El Equipo</div>
+      <h2 class="section-title reveal" style="text-align:center;">Las manos detrás de <em>La Delicia</em></h2>
+    </div>
+    <div class="chef-grid">
+      <div class="chef-card reveal">
+        <img src="img/chef1.png" alt="Chef Marco" class="chef-avatar">
+        <div class="chef-name">Chef Marco Quispe</div>
+        <div class="chef-role">Chef Ejecutivo & Fundador</div>
+        <div class="chef-bio">Egresado del Le Cordon Bleu Lima con pasantías en Europa y Japón. Su visión fusiona cocina nikkei, novoandina y criolla.</div>
+      </div>
+      <div class="chef-card reveal reveal-delay-1">
+        <img src="img/chef2.png" alt="Chef Sofía" class="chef-avatar">
+        <div class="chef-name">Chef Sofía Mamani</div>
+        <div class="chef-role">Sous Chef & Postres</div>
+        <div class="chef-bio">Especialista en repostería peruana contemporánea. Estudió en París y convierte los postres tradicionales en obras de arte.</div>
+      </div>
+      <div class="chef-card reveal reveal-delay-2">
+        <img src="img/chef3.png" alt="Diego Vargas" class="chef-avatar">
+        <div class="chef-name">Diego Vargas</div>
+        <div class="chef-role">Sommelier & Piscolero</div>
+        <div class="chef-bio">Experto en piscos peruanos y maridaje. Creador de nuestra carta de cócteles artesanales.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote">
+    <span class="quote-mark">"</span>
+    <p class="quote-text reveal">"La cocina peruana no es solo sabor —<br>es memoria, territorio e identidad."</p>
+    <p class="quote-author reveal">— Chef Marco Quispe, La Delicia</p>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria">
+    <div class="section-eyebrow reveal">Galería</div>
+    <h2 class="section-title reveal">Momentos que <em>perduran</em></h2>
+    <div class="galeria-grid reveal">
+      <!-- REEMPLAZA src con tus fotos reales -->
+      <div class="galeria-item gi-grande">
+        <img src="img/galeria1.png" alt="Ceviche">
+        <div class="galeria-overlay"><span class="galeria-cap">Ceviche Clásico</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/galeria2.png" alt="Ingredientes">
+        <div class="galeria-overlay"><span class="galeria-cap">Ingredientes frescos</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/galeria3.png" alt="Ajíes">
+        <div class="galeria-overlay"><span class="galeria-cap">Ajíes del norte</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/galeria4.png" alt="Emplatado">
+        <div class="galeria-overlay"><span class="galeria-cap">Emplatado de autor</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/galeria5.png" alt="Pisco">
+        <div class="galeria-overlay"><span class="galeria-cap">Pisco de altura</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios">
+    <div style="text-align:center;">
+      <div class="section-eyebrow reveal" style="justify-content:center;">Testimonios</div>
+      <h2 class="section-title reveal" style="text-align:center;">Lo que dicen nuestros <em>comensales</em></h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"El mejor ceviche que he probado en mi vida. La leche de tigre es una obra maestra. Noche perfecta en todos los sentidos."</p>
+        <div class="test-sep"></div>
+        <div class="test-name">María Fernanda C.</div>
+        <div class="test-via">Google Reviews</div>
+      </div>
+      <div class="test-card reveal reveal-delay-1">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"El lomo saltado de autor es extraordinario. Se nota la calidad del producto y la creatividad del chef. Ambiente oscuro y muy elegante."</p>
+        <div class="test-sep"></div>
+        <div class="test-name">Roberto Salinas V.</div>
+        <div class="test-via">TripAdvisor</div>
+      </div>
+      <div class="test-card reveal reveal-delay-2">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"El pisco sour es de otro nivel. Todo el menú refleja un profundo respeto por la gastronomía peruana. Servicio impecable."</p>
+        <div class="test-sep"></div>
+        <div class="test-name">Claudia Torres M.</div>
+        <div class="test-via">Instagram</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section id="reservas">
+    <div class="reservas-left">
+      <div class="section-eyebrow reveal">Reservaciones</div>
+      <h2 class="section-title reveal">Asegura tu <em>mesa</em></h2>
+      <div class="gold-rule reveal"></div>
+      <form onsubmit="return false;">
+        <div class="form-group reveal">
+          <label class="form-label">Nombre completo</label>
+          <input type="text" class="form-input" placeholder="¿Cómo te llamas?">
+        </div>
+        <div class="form-group reveal reveal-delay-1">
+          <label class="form-label">Correo electrónico</label>
+          <input type="email" class="form-input" placeholder="tu@email.com">
+        </div>
+        <div class="form-row">
+          <div class="form-group reveal reveal-delay-1">
+            <label class="form-label">Fecha</label>
+            <input type="date" class="form-input">
+          </div>
+          <div class="form-group reveal reveal-delay-2">
+            <label class="form-label">Hora</label>
+            <select class="form-input">
+              <option value="">Seleccionar</option>
+              <option>12:30 pm</option>
+              <option>1:00 pm</option>
+              <option>7:00 pm</option>
+              <option>7:30 pm</option>
+              <option>8:00 pm</option>
+              <option>9:00 pm</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group reveal reveal-delay-2">
+          <label class="form-label">Número de personas</label>
+          <select class="form-input">
+            <option>1 persona</option>
+            <option selected>2 personas</option>
+            <option>3 personas</option>
+            <option>4 personas</option>
+            <option>5–6 personas</option>
+            <option>Grupo especial (+10)</option>
+          </select>
+        </div>
+        <div class="form-group reveal reveal-delay-3">
+          <label class="form-label">Solicitudes especiales</label>
+          <textarea class="form-input" style="height:80px;resize:none;" placeholder="Alergias, ocasión especial..."></textarea>
+        </div>
+        <button type="button" class="btn-reservar reveal reveal-delay-3" id="btn-reservar">Confirmar Reserva</button>
+      </form>
+    </div>
+    <div class="reservas-right">
+      <div class="info-block reveal">
+        <div class="info-block-title">🕐 Horarios</div>
+        <div class="info-block-text">
+          Lunes – Viernes &nbsp; 12:00 pm – 10:00 pm<br>
+          Sábado &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12:00 pm – 11:00 pm<br>
+          Domingo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12:00 pm – 9:00 pm
+        </div>
+      </div>
+      <div class="info-block reveal reveal-delay-1">
+        <div class="info-block-title">📍 Ubicación</div>
+        <div class="info-block-text">Av. La Mar 1050, Miraflores<br>Lima, Perú</div>
+      </div>
+      <div class="info-block reveal reveal-delay-2">
+        <div class="info-block-title">📞 Contacto</div>
+        <div class="info-block-text">+51 (1) 234 5678<br>reservas@ladelicia.pe</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">La Delicia</div>
+    <div class="footer-copy">© 2024 La Delicia · Cocina Peruana de Autor · Lima, Perú</div>
+    <div class="footer-links">
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
